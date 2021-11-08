@@ -2,7 +2,7 @@
 from flask import Blueprint, render_template, request, flash, redirect, url_for
 from flask_login import login_required, current_user
 #Importamos la clase Post
-from .models import Post, User
+from .models import Post
 from . import db
 
 # Importamos las librerías que nos serviran para mostrar las páginas que solamente aparecen si hay una sesión iniciada
