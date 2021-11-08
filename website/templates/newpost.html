@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block title %}Create Post{% endblock%}
+{% block content %}
+<br>
+<h1 align="center">Nuevo Post</h1>
+<br>
+<form method="POST">
+    <div>
+        <div>
+            <select class="form-select w-25 p-3 mb-2 bg-success text-white" 
+               aria-label="Default select example" 
+               name="tipo" 
+               id="tipo" 
+               required>
+                <option value="1">Imagen</option>
+                <option value="2">Vídeo</option>
+              </select>
+        </div>    
+        <br>
+        <div class="d-flex align-items-start">
+            <br>
+            <span class="input-group-text w-25" id="basic-addon1" >URL</span>
+            <input 
+            type="text" 
+            class="form-control w-100" 
+            id="url" 
+            name="url"
+            required 
+            placeholder="https://youtube.com/asdfkld" 
+            aria-label="url" 
+            aria-describedby="basic-addon1">
+        </div>
+    </div>
+
+    <div>
+        <br>
+        <label for="category">Categoría</label>
+        <input 
+                  type="text" 
+                  id="category" 
+                  name="category" 
+                  class="form-control" 
+                  placeholder="Ingrese una categoría"
+                  required
+           />
+           <br>
+    </div>
+
+    <div>
+        <button type="submit" class="btn btn-lg btn-primary">Publicar</button>
+    </div>
+
+</form>
+
+{% endblock%}

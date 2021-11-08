@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% block title %}Sign Up{% endblock%}
+{% block content %}
+<form method="POST">
+    <br>
+    <h3 align="center"> UBlog Registro</h3>
+    <br>
+    <div class="form-group">   
+        <label for="name">Nombre Completo</label>
+        <input 
+             type="text" 
+             id="name" 
+             name="name" 
+             class="form-control" 
+             placeholder="Ingrese su nombre completo"
+             required
+       />
+       <br>
+       <label for="gender">Género</label>
+       <select class="form-select" aria-label="Default select example" name="gender" id="gender" required>
+        <option value="M">M</option>
+        <option value="F">F</option>
+      </select>
+      <br>
+       <label for="username">Nombre de Usuario</label>
+       <input 
+            type="text" 
+            id="username" 
+            name="username" 
+            class="form-control" 
+            placeholder="Ingrese su nombre de usuario"
+            required
+            minlength="4" 
+      />
+      <br>
+         <label for="email">Dirección Email</label>
+         <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              class="form-control" 
+              placeholder="Ingrese su email"
+              required
+        />
+        <br> 
+        <label for="password">Contraseña</label>
+        <input 
+             type="password" 
+             id="password" 
+             name="password" 
+             class="form-control" 
+             placeholder="Ingrese su contraseña"
+             required
+             minlength="8" 
+       />
+        <br>
+        <div align="center">
+            <button class="btn btn-primary" type="submit">Registrar</button>
+        </div>
+
+
+    </div>
+
+
+{% endblock%}
