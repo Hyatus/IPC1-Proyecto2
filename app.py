@@ -1,6 +1,13 @@
 # Importamos las configuraciones iniciales
-from website import create_app as application
-app = application
+# from website import create_app as application
+# app = application
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def hello_world():
+    return "<p>Hello, World!</p>"
 
    
 
