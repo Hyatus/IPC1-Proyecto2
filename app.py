@@ -1,15 +1,16 @@
 # Importamos las configuraciones iniciales
 # from website import create_app as application
-# app = application
-from flask import Flask
+# git push -f heroku main:master
+# Importamos las configuraciones iniciales
+# from flask import Flask
 
-app = Flask(__name__)
+from website import create_app as application
+app=application
 
-@app.route("/")
-def hello_world():
-    return "<p>Hello, World!</p>"
+#if __name__ == "__main__":
+#   app=create_app()
+#   app.run(debug=True)
 
-   
 
 
 
