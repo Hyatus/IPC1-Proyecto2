@@ -1,7 +1,10 @@
 # Importamos las configuraciones iniciales
 from website import create_app
+from website import create_app as application
 
-if __name__ == "__main__":
-   app= create_app()
-   app.run(debug=True)
+app= application
+   
+
+
+
 
